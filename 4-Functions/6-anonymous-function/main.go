@@ -23,6 +23,7 @@ func main() {
 
 	// anonymous IIFE assigned to `counter`
 	// return a function which is returning int
+	// 'higher-order' function (returning the anonymous function)
 	counter := func() func() int {
 		num := 0
 		return func() int {
