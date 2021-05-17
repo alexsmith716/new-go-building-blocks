@@ -36,3 +36,23 @@ func main() {
 		fmt.Println("Factorial", i, "=", facto(i))
 	}
 }
+
+//	% go run main.go
+//	Countdown 10
+//	Countdown 9
+//	Countdown 8
+//	Countdown 7
+//	Countdown 6
+//	Countdown 5
+//	Countdown 4
+//	Countdown 3
+//	Countdown 2
+//	Countdown 1
+//	Lift Off!
+//	Factorial 1 = 1
+//	Factorial 2 = 2
+//	Factorial 3 = 6
+//	Factorial 4 = 24
+//	Factorial 5 = 120
+//	Factorial 6 = 720
+//	Factorial 7 = 5040
