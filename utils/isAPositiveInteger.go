@@ -13,10 +13,3 @@ func IsAPositiveInteger(num int) (int, error) {
 	}
 	return num, nil
 }
-
-//	% go run main.go
-//	2 Passed!
-//	1 Passed!
-//	Failed: 0 not a positive integer
-//	Failed: -1 not a positive integer
-//	Failed: -2 not a positive integer
