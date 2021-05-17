@@ -4,8 +4,7 @@ import (
 	"fmt"
 )
 
-// 
-
+// related items of a data type (i.e. employee) can be grouped in a struct type
 // create struct type `worker`
 // create 3 fields of name/data type pairs (id, name, dept)
 type worker struct {
