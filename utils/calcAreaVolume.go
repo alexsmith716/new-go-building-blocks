@@ -7,7 +7,6 @@ type CalcAreaVolume struct{ length, width, height int }
 // volume: l x w x h
 
 // attach inaccessible method `area()` to struct `CalcAreaVolume`
-// modifying the original struct fields
 func (c CalcAreaVolume) calculateArea() int {
 	return c.length * c.width
 }
@@ -21,13 +20,11 @@ func (c *CalcAreaVolume) SetStructFields(l, w, h int) {
 }
 
 // attach accessible method `GetArea()` to struct `CalcAreaVolume`
-// modifying the original struct fields
 func (c CalcAreaVolume) MethodArea() int {
 	return c.calculateArea()
 }
 
 // attach accessible method `GetVolume()` to struct `CalcAreaVolume`
-// modifying the original struct fields
 func (c CalcAreaVolume) MethodVolume() int {
 	return c.length * c.width * c.height
 }
