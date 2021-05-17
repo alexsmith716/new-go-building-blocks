@@ -1,7 +1,7 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
 )
 
 // point to stored values
@@ -34,23 +34,23 @@ import (
 func main() {
 
 	// declare and initialize a integer var and a pointer var
-  var num int = 20
-  var ptr *int = &num // `var` `ptr` will point "*" to an `int` and be assigned the address `&num`
+	var num int = 20
+	var ptr *int = &num // `var` `ptr` will point "*" to an `int` and be assigned the address `&num`
 
-  // display value and memory address of integer variable
-  fmt.Printf("num value: %v type: %T \n", num, num)
-  fmt.Printf("num address: %v type: %T \n", ptr, ptr) // "pointer" address of `num`
+	// display value and memory address of integer variable
+	fmt.Printf("num value: %v type: %T \n", num, num)
+	fmt.Printf("num address: %v type: %T \n", ptr, ptr) // "pointer" address of `num`
 
-  fmt.Printf("num via pointer: %v type: %T \n", *ptr, *ptr) // "pointer" value of `num`
-  fmt.Printf("ptr address: %v type: %T \n", &ptr, &ptr) // address of "pointer"
+	fmt.Printf("num via pointer: %v type: %T \n", *ptr, *ptr) // "pointer" value of `num`
+	fmt.Printf("ptr address: %v type: %T \n", &ptr, &ptr) // address of "pointer"
 
-  *ptr = 100 // change value stored in `num`
-  fmt.Printf("new num value: %v type: %T \n", num, num)
+	*ptr = 100 // change value stored in `num`
+	fmt.Printf("new num value: %v type: %T \n", num, num)
 }
 
-//  % go run main.go
-//  num value: 20 type: int 
-//  num address: 0xc000016070 type: *int 
-//  num via pointer: 20 type: int 
-//  ptr address: 0xc00000e028 type: **int 
-//  new num value: 100 type: int
+//	% go run main.go
+//	num value: 20 type: int 
+//	num address: 0xc000016070 type: *int 
+//	num via pointer: 20 type: int 
+//	ptr address: 0xc00000e028 type: **int 
+//	new num value: 100 type: int

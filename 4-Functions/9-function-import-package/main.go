@@ -13,7 +13,7 @@ func main() {
 
 	for i := 2; i >= -2; i-- {
 
-		res, err := utils.isAPositiveInteger(i)
+		res, err := utils.IsAPositiveInteger(i)
 
 		if err != nil {
 			fmt.Println("Failed:", err)

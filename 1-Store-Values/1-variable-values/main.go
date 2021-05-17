@@ -1,30 +1,30 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
 )
 
 // display variable values
 
 func main() {
 
-  num := 100
-  pi := 3.1415926536
+	num := 100
+	pi := 3.1415926536
 
-  // value of variables displayed with "fmt.Println()" function (for string)
+	// value of variables displayed with "fmt.Println()" function (for string)
 	// desired format to display value specified with "fmt.Println()" function using the suitable "format specifier" and var name
 
 	// `fmt.Printf()` does not add a new line after the output. `\n` is needed to add new line
-  // output variable values in varous formats
-  fmt.Printf("num: %v type:%T \n", num, num)
-  fmt.Printf("num: %v type:%T \n", pi, pi)
+	// output variable values in varous formats
+	fmt.Printf("num: %v type:%T \n", num, num)
+	fmt.Printf("num: %v type:%T \n", pi, pi)
 
-  fmt.Printf("%%7d displays %7d \n", num)
-  fmt.Printf("%%07d displays %07d \n", num)
+	fmt.Printf("%%7d displays %7d \n", num)
+	fmt.Printf("%%07d displays %07d \n", num)
 
-  fmt.Printf("Pi is approximately %1.10f \n", pi)
-  fmt.Printf("Right-aligned %20.3f rounded pi \n", pi)
-  fmt.Printf("Left-aligned %-20.3f rounded pi", pi)
+	fmt.Printf("Pi is approximately %1.10f \n", pi)
+	fmt.Printf("Right-aligned %20.3f rounded pi \n", pi)
+	fmt.Printf("Left-aligned %-20.3f rounded pi", pi)
 }
 
 //  % go run main.go
