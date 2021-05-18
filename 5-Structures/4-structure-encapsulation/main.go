@@ -6,14 +6,15 @@ import (
 )
 
 // represent objects in programs -OOP
+// Encapsulation, Inheritance and Polymorphism is OOP
+
 // an OOP program uses methods to express the properties and operatons of a data structure
 // a `var`, `func` or method that is not publically accessible is 'encapsulated'
 
-// encapsulation is data-hiding in a package that is imported into a program
+// Encapsulation is data-hiding in a package that is imported into a program
 // only `var`, `func` or methods that are capitalized are exported to the program
 // lowercase `var`, `func` or methods are inaccessible in the program (already used in '4-Functions > 9-function-import-package')
 
-// Encapsulation, Inheritance and Polymorphism is OOP
 
 func main() {
 

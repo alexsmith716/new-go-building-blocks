@@ -36,8 +36,8 @@ func main() {
 
 	// fields of embedded struct `coordinates` can be accessed
 	ring.radius = 35
-	// ring.x = ring.radius
-	// ring.y = ring.radius
+	ring.x = ring.radius
+	ring.y = ring.radius
 
 	// or, fields of embedded struct `coordinates` can be accessed by chaining
 	// instanceName.embeddedStructName.fieldName
@@ -52,5 +52,5 @@ func main() {
 }
 
 //	% go run main.go
-//	Diameter:30
-//	Point X:15 Y:15
+//	Diameter:70
+//	Point X:35 Y:35
