@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+// type interface
+
 // Go is a type-safe, statically typed, compiled programming language
 // Go's type system specifies a set of rules that assign a type property to variables, functions and identifiers
 // types (type names / type declarations) are designed to prevent occurrences of unchecked runtime type errors
@@ -66,22 +68,33 @@ func (hotAirBalloon) propulsionType() string {
 func main() {
 
 	// interfaces in Go are "implicitly implemented"
+	// Go automatically recognizes when an interface is implemented
 	// type `cessna172` struct type implements interface `aircraft`
 	// so, a variable of type `cessna172` can be represented as the type of interface `aircraft`
 	var a1 aircraft
+
 	a1 = cessna172{}
+	c := cessna172{}
+
+	fmt.Println("a1 == c ?: ", a1 == c)
+
 	fmt.Printf("%v \n", a1.liftType())
 	fmt.Printf("%v \n", a1.propulsionType())
 
 	// type `hotAirBalloon` struct type implements interface `aircraft`
 	var a2 aircraft
 	a2 = hotAirBalloon{}
+
+	fmt.Println("a2 == c ?: ", a1 == c)
+
 	fmt.Printf("%v \n", a2.liftType())
 	fmt.Printf("%v \n", a2.propulsionType())
 }
 
-//	% go run mainC.go
+//	% go run main.go
+//	a1 == c ?:  true
 //	dynamic 
 //	propeller 
+//	a2 == c ?:  true
 //	static 
 //	wind
