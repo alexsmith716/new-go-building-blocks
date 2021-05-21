@@ -23,8 +23,7 @@ import (
 // create a new interface by merging two or more interfaces
 
 // land, rail, water, amphibious, air
-// internal combustion, battery, propeller, jet, wind, nuclear
-// internal combustion, battery, propeller, jet, wind, nuclear
+// internal combustion, battery, propeller, jet, wind, nuclear, solar
 
 type transportation interface {
 	transportationType() string
@@ -35,7 +34,7 @@ type propulsion interface {
 	propulsionMethod() string
 }
 
-// vehicle: object that transports people or other objects
+// vehicle: object that transports objects
 // new interface `vehicle` with merged interface `transportation` & `propulsion`
 type vehicle interface {
 	transportation
