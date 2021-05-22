@@ -15,7 +15,7 @@ import (
 
 // structs can be embedded and interface can be embedded
 // Go automatically identifies which struct implements each interface
-// interface embedding common in Go standard libary
+// interface embedding is common in Go standard library
 // the `io` package contains a `ReadWriter` interface that embeds `Reader` and `Writer` interfaces
 // those embedded `Reader` and `Writer` interfaces contain `Read` and `Write` method signitures
 

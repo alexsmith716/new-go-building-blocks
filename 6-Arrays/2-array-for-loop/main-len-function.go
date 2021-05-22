@@ -5,7 +5,7 @@ import (
 )
  
 // for-loop using Go's built-in `len()` function
-// `len()` function accepts array as argument and returns an `int` that is the numbr of elements in array
+// `len()` function accepts array as argument and returns an `int` that is the number of elements in array
 // `len()` function will exit the loop when it reaches the array's final element
  
 
