@@ -6,6 +6,7 @@ import (
 )
 
 // 'math' functions used to evaluate 'float64' arguments
+
 // functions:
 // math.Abs(), math.Acos(), math.Asin(), math.Atan(), math.Atan2(), math.Ceil(), math.Cos(),
 // math.Exp(), math.Floor(), math.isNaN(), math.Log(), math.Max(), math.Min(), math.Pow(),
@@ -18,6 +19,8 @@ func main() {
 	sixToTheThird := math.Pow(6, 3)
 	// returns value of 2 to the power of 4 (2*2*2*2)
 	twoToTheFourth := math.Pow(2, 4)
+
+	fmt.Println("sixToTheThird:", sixToTheThird)
 
 	// compare the positive value of the variables and show the largest & smallest numbers
 	// return the larger (`math.Max()`) & smaller (`math.Min()`) of 2 numbers
