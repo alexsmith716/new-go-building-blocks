@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-// 'fmt' package provides functions () to read from standard imput:
+// 'fmt' package provides functions to read from standard imput:
 
 // Scan(), ScanIn(), Scanf()
 
