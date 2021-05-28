@@ -6,8 +6,8 @@ import (
 
 // array types (when passed to a function)
 
-// an "array" contains a sequence of "values"
-// a "slice" contains a "reference" to a sequence of values
+// >>>>>>>>>>> an ARRAY contains a sequence of values
+// >>>>>>>>>>> a SLICE contains a reference to a sequence of values
 
 // when passing a type to a function:
 // * types that are 'value-based' (ARRAY) receive a COPY of the original
