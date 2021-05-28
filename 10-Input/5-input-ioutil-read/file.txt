@@ -1,0 +1,1 @@
+Every request your application sends to the API needs to identify your application to Google. There are two ways to identify your application: using an OAuth 2.0 token (which also authorizes the request) and/or using the application's API key.
