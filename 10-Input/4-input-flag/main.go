@@ -24,9 +24,9 @@ func main() {
 	var intVar int
 	flag.IntVar(&intVar, "intVar", 1234, "help message for intVar")
 
-	generateCpuProfilePointer := flag.String("generateProfile", "profile.profile", "Emit a profile for debugging")
-	maxNodeModuleJsDepthPointer := flag.Int("maxDepth", 0, "Specify the maximum depth")
-	allowJsPointer := flag.Bool("allowFiles", false, "Allow files to be a part of your program")
+	generateCpuProfileVar := flag.String("generateProfile", "profile.profile", "Emit a profile for debugging")
+	maxNodeModuleJsDepthVar := flag.Int("maxDepth", 0, "Specify the maximum depth")
+	allowJsVar := flag.Bool("allowFiles", false, "Allow files to be a part of your program")
 
 	// parse the command-line flags
 	// called after all flags are defined and before flags are accessed by the program
@@ -35,9 +35,10 @@ func main() {
 	fmt.Println("strVar:", strVar)
 	fmt.Println("intVar:", intVar)
 
-	fmt.Println("generateProfile:", *generateCpuProfilePointer)
-	fmt.Println("maxDepth:", *maxNodeModuleJsDepthPointer)
-	fmt.Println("allowFiles:", *allowJsPointer)
+	// >>>> "*" <<<<< referencing the VALUE stored at the address, NOT the variable address
+	fmt.Println("generateProfile:", *generateCpuProfileVar)
+	fmt.Println("maxDepth:", *maxNodeModuleJsDepthVar)
+	fmt.Println("allowFiles:", *allowJsVar)
 	fmt.Println("tail:", flag.Args()) // output any remaining input
 }
 
