@@ -53,7 +53,7 @@ func main() {
 	// built-in `copy()` function copies one slice into another
 	// `copy()` function takes 2 args (slice to copy into, slice to copy from)
 	// technique to remove an element from a slice and preserve order of remaining elements
-	// below, `copy()` function is removing 2st element of slice `foreignAutosSlice[1:]` by copying in slice `foreignAutosSlice[2:]`
+	// below, `copy()` function is removing 2nd element of slice `foreignAutosSlice[1:]` by copying in slice `foreignAutosSlice[2:]`
 	copy(foreignAutosSlice[1:], foreignAutosSlice[2:])
 	// order is maintained (appended Civic will be last) but need to remove last value of duplicated 'Civic'
 	foreignAutosSlice = foreignAutosSlice[:len(foreignAutosSlice)-1]
