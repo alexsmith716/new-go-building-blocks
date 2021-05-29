@@ -38,23 +38,23 @@ func main() {
 	specifiedPosition, err := openFile.Seek(94, 0)
 	check(err)
 
-	// create a byte type slice for with a length that represents a number of characters
+	// create a byte type slice with a length that represents a number of characters
 	byteSlice := make([]byte, (len(readFile)-78))
 
 	// 'Read()' takes the 'byteSlice' to know how many text characters to 'read'
-	// 'Read()' then returns the number of bytes/characrers it read
-	numberOfBytes, err := openFile.Read(byteSlice)
+	// 'Read()' then returns the number of bytes/characters it read
+	numberOfBytesRead, err := openFile.Read(byteSlice)
 	check(err)
 
 	openFile.Close()
 
-	fmt.Printf("numberOfBytes: %v \n", numberOfBytes)
+	fmt.Printf("numberOfBytesRead: %v \n", numberOfBytesRead)
 	fmt.Printf("specifiedPosition: %v \n", specifiedPosition)
-	fmt.Printf("Display text from the second sentence: %v \n", string(byteSlice[:numberOfBytes]))
+	fmt.Printf("Display text from the second sentence: %v \n", string(byteSlice[:numberOfBytesRead]))
 }
 
 //	% go run main.go
 //	ioutil.ReadFile(): Every request your application sends to the API needs to identify your application to Google. There are two ways to identify your application: using an OAuth 2.0 token (which also authorizes the request) and/or using the application's API key.
-//	numberOfBytes: 149 
+//	numberOfBytesRead: 149 
 //	specifiedPosition: 94 
 //	Display text from the second sentence: There are two ways to identify your application: using an OAuth 2.0 token (which also authorizes the request) and/or using the application's API key.
